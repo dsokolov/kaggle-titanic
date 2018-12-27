@@ -1,6 +1,7 @@
 import pandas as pd
 
-import src.decision_tree
+# import src.decision_tree
+import src.random_forest
 import src.io_utils
 
 print('begin')
@@ -10,6 +11,7 @@ titanic_test_df = pd.read_csv("../input/test.csv")
 
 # src.heuristic.run(train_df=titanic_train_df, test_df=titanic_test_df)
 
-src.decision_tree.run(train_df=titanic_train_df, test_df=titanic_test_df)
+# src.decision_tree.run(train_df=titanic_train_df, test_df=titanic_test_df)
+src.random_forest.run(train_df=titanic_train_df, test_df=titanic_test_df)
 
 print('end')
